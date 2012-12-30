@@ -3,14 +3,309 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 body, html {
-	height: 100%;
+	margin: 0;
+	overflow: hidden;
 }
 
-#main {
-	background-image: url('/assets/main.jpg');
-	width: 1280px;
-	height: 800px;
-	margin: 30px;
-	margin-left: auto;
-	margin-right: auto;
+ul {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+	
+	li {
+		display: inline-block;
+	}
+}
+
+.top-bar {
+	position: fixed;
+	top: 0px;
+	right: 100px;
+	width: 215px;
+	height: 40px;
+	background-color: black;
+	
+	ul {
+		padding: 5px;
+		margin-left: 20px;
+		
+		li {
+			margin-right: 10px;
+			padding: 5px;
+		}
+	}
+	
+	.twitter, .facebook, .linkedin, .mail {
+		width: 20px;
+		height: 20px;
+	}
+	
+	.twitter {
+		background: url('/assets/twitter.png');
+	}
+	
+	.facebook {
+		background: url('/assets/facebook.png');
+	}
+	
+	.linkedin {
+		background: url('/assets/linkedin.png');
+	}
+	
+	.mail {
+		background: url('/assets/mail.png');
+	}
+}
+
+.main-container {
+	width: 100%;
+	height: 100%;
+	
+	.content {
+		position: relative;
+		top: 70px;
+		left: 5%;
+		
+		.main {
+			height: auto;
+			width: 650px;
+			text-transform: uppercase;
+			font-size: 20px;
+			font-family: Impact;
+		}
+		
+		.extra {
+			margin-top: 20px;
+			font-size: 13px;
+			height: 400px;
+			width: 650px;
+			font-family: 15px;
+		}
+	}
+	
+	.jardin-logo {
+		position: relative;
+		top: 30px;
+		left: 3%;
+		width: 200px;
+		height: 80px;
+		background: url('/assets/jardin_innovacion.png');
+	}
+	
+	.partners {
+		position: relative;
+		bottom: 230px;
+		left: 5%;
+		
+		.title {
+			font-size: 20px;
+			color: #5DD4CF;
+			text-transform: uppercase;
+			font-family: Impact;
+		}
+		
+		ul li {
+			margin-right: 30px;
+		}
+		
+		.unreasonable-logo {
+			width: 310px;
+			height: 70px;
+			background: url('/assets/unreasonable_logo.png');
+		}
+		
+		.founder-logo {
+			width: 140px;
+			height: 70px;
+			background: url('/assets/founder_logo.png');
+		}
+		
+		.enviu-logo {
+			width: 245px;
+			height: 70px;
+			background: url('/assets/enviu_logo.png');
+		}
+	}
+	
+	.right-floatant {
+		position: fixed;
+		width: 400px;
+		height: auto;
+		right: 40px;
+		top: 50px;
+		
+		.tree {
+			margin-left: -30px !important;
+			width: auto;
+			height: 400px;
+			background: url('/assets/tree.png');
+		}
+		
+		.apply {
+			display: block;
+			width: 350px;
+			height: 100px;
+			background: url('/assets/apply.png');
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: -30px;
+		}
+	}
+
+}
+
+.drawer-area {
+	width: 100%;
+	height: 200px;
+	position: fixed;
+	bottom: 65px;
+	
+	div {
+		display: none;
+	}
+	
+	.programs-d {
+		width: 100%;
+		background-color: #FF7305;
+		height: 200px;
+	}
+	
+	.mentors-d {
+		width: 100%;
+		background-color: #3C1379;
+		height: 200px;
+	}
+	
+	.lab-d {
+		width: 100%;
+		background-color: #64CDF2;
+		height: 200px;
+	}
+	
+	.events-d {
+		width: 100%;
+		background-color: #9DDE2A;
+		height: 200px;
+	}
+	
+	.startups-d {
+		width: 100%;
+		background-color: #F233A6;
+		height: 200px;
+	}
+	
+	.space-d {
+		width: 100%;
+		background-color: #F2AF0A;
+		height: 200px;
+	}
+}
+
+.bottom-bar {
+	position: fixed;
+	width: 100%;
+	height: 50px;
+	bottom: 0px;
+	
+	ul {
+		display: table;
+		width: 100%;
+		
+		li {
+			display: table-cell;
+			width: auto;
+			height: 50px;
+			font-family: Impact;
+			color: white;
+			font-size: 18px;
+			font-weight: normal;
+			border-right: 1px solid white;
+			
+			p, div {
+				display: inline-block;
+				margin: 0px;
+			}
+			
+			.icon {
+				width: 150px;
+				height: 50px;
+			}
+			
+			.text {
+				margin: 15px;
+				margin-left: 0px;
+				vertical-align: top !important;
+			}
+		}
+		
+		li#programs:hover {
+			background-color: #FF8514;
+		}
+		
+		li#programs {
+			.icon {
+				width: 120px;
+				background: url('/assets/programs_icon.png');
+			}
+			
+			background-color: #FF7305;
+		}
+		
+		li#mentors:hover {
+			background-color: #571BAF;
+		}
+		
+		li#mentors {
+			.icon {
+				background: url('/assets/mentors_icon.png');
+			}
+			background-color: #3C1379;
+		}
+		
+		li#lab:hover {
+			background-color: #84DFF2;
+		}
+		
+		li#lab {
+			.icon {
+				width: 100px;
+				background: url('/assets/lab_icon.png');
+			}
+			background-color: #64CDF2;
+		}
+		
+		li#events:hover {
+			background-color: #B5E74F;
+		}
+		
+		li#events {
+			.icon {
+				background: url('/assets/events_icon.png');
+			}
+			background-color: #9DDE2A;
+		}
+		
+		li#startups:hover {
+			background-color: #F257C3;
+		}
+		
+		li#startups {
+			.icon {
+				background: url('/assets/startups_icon.png');
+			}
+			background-color: #F233A6;
+		}
+		
+		li#space:hover {
+			background-color: #F2BB43;
+		}
+		
+		li#space {
+			.icon {
+				width: 150px;
+				background: url('/assets/space_icon.png');
+			}
+			background-color: #F2AF0A;
+		}
+	}
 }

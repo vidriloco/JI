@@ -3,3 +3,9 @@
 
 en:
   hello: "Hello world"
+  welcome:
+    main: "The Garden of Innovation has a pre-designed, innovative and creative environment perfectly suited for nurturing, growing and showing sustainable business ideas offered to and for those who are willing to stand out."
+    extra_one: "It's acceleration program presents a series of inspiring workshops and training days to help entrepreneurs build sustainable companies and embed sustainable thinking and product development within their organization." 
+    extra_two: "Resources offered at the acceleration program include:"
+    extra_three: "A community of game changing entrepreneurs, seasoned mentors, funding services, partner network, master workshops and conferences, working space and prototyping."
+    strategic_partners: "Strategic Partners"
