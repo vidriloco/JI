@@ -2,9 +2,18 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+@font-face {
+	font-family: 'BebasNeue';
+	src: url('/assets/BebasNeue-webfont.eot');
+	src: url('/assets/BebasNeue-webfont.woff') format('woff'), url('/assets/BebasNeue-webfont.ttf') format('truetype'), url('/assets/BebasNeue-webfont.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
 body, html {
 	margin: 0;
 	overflow: hidden;
+	font-family: Sans-Serif;
 }
 
 ul {
@@ -71,7 +80,7 @@ ul {
 			width: 650px;
 			text-transform: uppercase;
 			font-size: 20px;
-			font-family: Impact;
+			font-family:'BebasNeue',Sans-Serif;
 		}
 		
 		.extra {
@@ -101,7 +110,7 @@ ul {
 			font-size: 20px;
 			color: #5DD4CF;
 			text-transform: uppercase;
-			font-family: Impact;
+			font-family:'BebasNeue',Sans-Serif;
 		}
 		
 		ul li {
@@ -215,7 +224,7 @@ ul {
 			display: table-cell;
 			width: auto;
 			height: 50px;
-			font-family: Impact;
+			font-family:'BebasNeue',Sans-Serif;
 			color: white;
 			font-size: 18px;
 			font-weight: normal;
